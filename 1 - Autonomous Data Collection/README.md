@@ -2,7 +2,7 @@
 
 **The process: robot picks a sample, rotates in front of a camera for recording, returns sample to rack, then repeats.**
 
-<ins>Files</ins>:
+<ins>Scripts</ins>:
 
 robot_positions.py - Coordinates for the robotic arm movements (via Yumipy)
 
