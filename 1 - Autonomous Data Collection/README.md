@@ -1,4 +1,4 @@
-This is the code for collecting videos of liquid samples autonomously using the a robotic workflow to feed into the 3D-CNN models
+Scripts for robotic workflow which collects videos of liquids in motion. These videos are used for training a 3D-CNN model to estimate their properties.
 
 The process: robot picks a sample, rotates in front of a camera for recording, returns sample to rack, then repeats.
 
