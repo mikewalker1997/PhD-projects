@@ -4,7 +4,6 @@ import threading
 
 class SmallVialRecords():
 
-    # Video class based on openCV
     def __init__(self, video_filename):
 
         self.open = True
@@ -16,7 +15,6 @@ class SmallVialRecords():
         self.frame_counts = 1
         self.start_time = time.time()
 
-    # Video starts being recorded
     def record(self):
 
         while int(time.time() - self.start_time) < self.capture_duration:
@@ -26,8 +24,7 @@ class SmallVialRecords():
                 self.frame_counts += 1
             else:
                 break
-        # Finishes the video recording therefore the thread too
-
+  
     def stop(self):
 
         if self.open:
@@ -39,7 +36,6 @@ class SmallVialRecords():
         else:
             pass
 
-    # Launches the video recording function using a thread
     def start(self):
         video_thread = threading.Thread(target=self.record)
         video_thread.start()
@@ -57,16 +53,9 @@ def stop_small_vial_video(video_filename):
     global video_thread
     video_thread.stop()
 
-#def record_videos_small():
-#   for i in range(1,6):
-
-#        start_small_vial_recording('video_position_tryBBNG_'+str(i)+'.avi')
-#        time.sleep(5)
-#        stop_small_vial_video('video_position_tryBBNG_'+str(i)+'.avi')
 
 class BigVialRecords():
 
-    # Video class based on openCV
     def __init__(self, video_filename):
 
         self.open = True
@@ -78,7 +67,6 @@ class BigVialRecords():
         self.frame_counts = 1
         self.start_time = time.time()
 
-    # Video starts being recorded
     def record(self):
 
         while int(time.time() - self.start_time) < self.capture_duration:
@@ -88,8 +76,7 @@ class BigVialRecords():
                 self.frame_counts += 1
             else:
                 break
-        # Finishes the video recording therefore the thread too
-
+       
     def stop(self):
 
         if self.open:
@@ -101,7 +88,6 @@ class BigVialRecords():
         else:
             pass
 
-    # Launches the video recording function using a thread
     def start(self):
         video_thread = threading.Thread(target=self.record)
         video_thread.start()
@@ -118,10 +104,3 @@ def start_big_vial_recording(video_filename):
 def stop_big_vial_video(video_filename):
     global video_thread
     video_thread.stop()
-
-#def record_videos_big():
-#   for i in range(1,6):
-
-#        start_big_vial_recording('video_position_tryBBNG_'+str(i)+'.avi')
-#        time.sleep(20)
-#       stop_big_vial_video('video_position_tryBBNG_'+str(i)+'.avi')
