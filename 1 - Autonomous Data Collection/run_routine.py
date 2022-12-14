@@ -16,9 +16,9 @@ if __name__ == "__main__":
             pick_small_vial_function = str("pick_small_vial_"+str(i)+"()")
             eval(pick_small_vial_function)
             robot_routine()
-            start_small_vial_recording('video_position_trySL_'+str(i)+'.avi') # from records_vids_classes.py
+            start_small_vial_recording('small_vial_'+str(i)+'.avi') # records and saves video (from records_vids_classes.py)
             time.sleep(5)
-            stop_small_vial_video('video_position_trySL_'+str(i)+'.avi')
+            stop_small_vial_video('small_vial_'+str(i)+'.avi')
             robot_return()                                                    # robot returns sample to rack
             putback_small_vial_function = str("putback_small_vial_"+str(i)+"()")
             eval(putback_small_vial_function)
@@ -29,9 +29,9 @@ if __name__ == "__main__":
             pick_big_vial_function = str("pick_big_vial_"+str(i)+"()")
             eval(pick_big_vial_function)
             robot_routine_big()
-            start_big_vial_recording('video_position_trySL_'+str(i)+'.avi')
+            start_big_vial_recording('big_vial_'+str(i)+'.avi')
             time.sleep(5)
-            stop_big_vial_video('video_position_trySL_'+str(i)+'.avi')
+            stop_big_vial_video('big_vial_trySL_'+str(i)+'.avi')
             robot_return_big()
             putback_big_vial_function = str("putback_big_vial_"+str(i)+"()")
             eval(putback_big_vial_function)
