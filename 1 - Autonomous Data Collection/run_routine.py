@@ -6,18 +6,20 @@ import time
 if __name__ == "__main__":
     global y
     
+    # asks user to set vial size for routine
     vial_size_input = int(input("Vial size = "))
 
+    # for 8ml vial routine, the robot picks a small vial from designated position (1 to 10) and records video as the samples are rotated
     if vial_size_input == int(8):
         for i in range(1,11):
-            reset_robot_pos()
+            reset_robot_pos() # from robot_positions.py
             pick_small_vial_function = str("pick_small_vial_"+str(i)+"()")
             eval(pick_small_vial_function)
             robot_routine()
-            start_small_vial_recording('video_position_trySL_'+str(i)+'.avi')
+            start_small_vial_recording('video_position_trySL_'+str(i)+'.avi') # from records_vids_classes.py
             time.sleep(5)
             stop_small_vial_video('video_position_trySL_'+str(i)+'.avi')
-            robot_return()
+            robot_return()                                                    # robot returns sample to rack
             putback_small_vial_function = str("putback_small_vial_"+str(i)+"()")
             eval(putback_small_vial_function)
     
