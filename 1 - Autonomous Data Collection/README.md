@@ -1,6 +1,6 @@
-Scripts for robotic workflow which collects videos of liquids in motion. These videos are used for training a 3D-CNN model to estimate their properties.
+**Scripts for robotic workflow which collects videos of liquids in motion. These videos are used for training a 3D-CNN model to estimate their properties.
 
-The process: robot picks a sample, rotates in front of a camera for recording, returns sample to rack, then repeats.
+**The process: robot picks a sample, rotates in front of a camera for recording, returns sample to rack, then repeats.
 
 <ins>Files</ins>:
 
