@@ -1,9 +1,13 @@
+# classes for recording videos
+
 import cv2
 import time
 import threading
 
 class SmallVialRecords():
 
+    # Set camera characteristics (frame rate, length of video, size...) for specific routine
+    
     def __init__(self, video_filename):
 
         self.open = True
@@ -35,10 +39,13 @@ class SmallVialRecords():
             cv2.destroyAllWindows()
         else:
             pass
+        
+# start video threading
 
     def start(self):
         video_thread = threading.Thread(target=self.record)
         video_thread.start()
+
 
 
 def start_small_vial_recording(video_filename):
