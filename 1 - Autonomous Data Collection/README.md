@@ -4,8 +4,8 @@
 
 <ins>Scripts</ins>:
 
-robot_positions.py - Coordinates for the robotic arm movements (via Yumipy)
+*robot_positions.py* - Coordinates for the robotic arm movements (via Yumipy)
 
-record_vids_classes.py - Camera classes for recording videos, each class corresponds to the size of vials in routine
+*record_vids_classes.py* - Camera classes for recording videos, each class corresponds to the size of vials in routine
 
-run_routine.py - script for running the routine
+*run_routine.py* - script for running the routine
