@@ -1,7 +1,7 @@
 """
 Each function represents a routine for the robot to perform on the workflow
-Yumi gives positions in terms of 7 coordinates
-https://berkeleyautomation.github.io/yumipy/api/robot.html
+YuMi gives positions in terms of 7 coordinates
+YuMi-Python interface documentation - https://berkeleyautomation.github.io/yumipy/api/robot.html
 
 """
 
