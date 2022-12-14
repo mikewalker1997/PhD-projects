@@ -2,7 +2,7 @@ Scripts for robotic workflow which collects videos of liquids in motion. These v
 
 The process: robot picks a sample, rotates in front of a camera for recording, returns sample to rack, then repeats.
 
-Files:
+<ins>Files</ins>:
 
 robot_positions.py - Coordinates for the robotic arm movements (via Yumipy)
 
